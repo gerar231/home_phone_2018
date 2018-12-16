@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	height: 100%;
+}
+body {
+	height: 100%; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container {
+	height: 100%;
+}
+.title {
+	color: white;
+}
+
+.links {
+	color: white;
+}
+
+.cool-feature {
+	color: white;
+}
+
+/* material ui icons */
+/* Rules for using icons as white on a dark background. */
+.material-icons { color: rgba(255, 255, 255, 1); }
+.material-icons:active {cursor: pointer; color:#ABABAB;}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* rule for on-click */
+.material-icons.active {color: springgreen;}
+
+/* Green Call button on hover */
+.call .material-icons:active { color:springgreen;}
+
+/* Red Call button on hover */
+.hangup .material-icons:active {color:red;}
+
+/* media query for hover effects */
+@media (any-hover: hover) {
+	.material-icons:hover {cursor:pointer; color:#ABABAB;}
+	.call .material-icons:hover {color:springgreen;}
+	.hangup .material-icons:hover {color:red;}
+}
